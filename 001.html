@@ -1,0 +1,40 @@
+<style>
+.xyz{ height:60;width:200;font-size:50;}
+.btn{height:40;width:40;font-size:30;}
+</style>
+<table border=0>
+<tr><td colspan=4><input id=t1 type="number" class=xyz/>
+</tr></td>
+<tr><td colspan=4><input id=t2 type="number" class=xyz/>
+</tr></td>
+<tr><td><input type=button value= +  class=btn onclick="add()"/></td>
+<td><input type=button value= - class=btn onclick="sub()"/></td>
+<td><input type=button value= * class=btn onclick="multi()"/></td>
+<td><input type=button value= / class=btn onclick="divide()"/></td></tr><br><br>
+
+<output id=out1 />
+
+<script>
+function add()
+{
+a=parseInt(t1.value);
+b=parseInt(t2.value);
+c=a+b;
+out1.value='Add :- ' + c 
+}
+function sub()
+{
+d=a-b;
+out1.value='Subtract :-  '+ d
+}
+function multi()
+{
+e=a*b;
+out1.value='Multiply :- '+ e
+}
+function divide()
+{
+f=a/b;
+out1.value='Divide :- '+ f
+}
+</script>
