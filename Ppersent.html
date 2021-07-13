@@ -1,0 +1,28 @@
+
+marks1 :   <input id=t1 /> <br>
+marks2 :   <input id=t2 /> <br>
+marks3 :   <input id=t3 /> <br>
+marks4 :   <input id=t4 /> <br>
+marks5 :   <input id=t5 /> <br>
+
+<input type=button value=Total onclick="xyz()" /> <br>
+<input type=button value=% onclick="pqr()" /> <br>
+<output id=out1 />
+<script>
+function xyz()
+{
+a=parseInt(t1.value);
+b=parseInt(t2.value);
+c=parseInt(t3.value);
+d=parseInt(t4.value);
+e=parseInt(t5.value);
+s=a+b+c+d+e;
+l=s/5;
+out1.value='Total of marks is ' + s
+}
+function pqr()
+{
+g=(a+b+c+d+e)/5
+out1.value='percentage:'   +g
+}
+</script>
