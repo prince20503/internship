@@ -1,0 +1,22 @@
+
+<input id=t1 type=number ><br>
+<input id=t2  type=number ><br>
+<input id=t3  type=number ><br>
+<input type=button value="grater no." onclick=abc() ><br>
+<output id=d>
+
+<script>
+function abc()
+{
+x=parseFloat(t1.value);
+y=parseFloat(t2.value);
+z=parseFloat(t3.value);
+if(x >= y && x >= z)
+e=x
+else if(y>=x && y>=z)
+e=y
+else
+e=z
+d.value= ' Greatest no. is :- ' + e
+}
+</script>
