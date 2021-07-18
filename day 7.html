@@ -1,0 +1,44 @@
+<style>
+.abc { color:black;font-size:30 }
+.xyz { color:red;font-size:35 }
+</style>
+<p id=p1 class=abc onmouseover=a1() onmouseout=a2()> Video </p>
+<script>
+function a1()
+{
+p1.className="xyz"
+}
+function a2()
+{
+p1.className="abc"
+}
+</script> 
+<video width="400" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+</video><br>
+<style>
+.abc { color:black;font-size:30 }
+.xyz { color:red;font-size:35 }
+</style>
+<p id=p1 class=abc onmouseover=a1() onmouseout=a2()> Audio </p>
+<script>
+function a1()
+{
+p1.className="xyz"
+}
+function a2()
+{
+p1.className="abc"
+}
+</script>
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+
+
+<center>
+<video  src=samplevideo.mp4  width=400 height=400 controls />
+<audio  src=sampleaudio.mp3  width=300 height=300 controls />
+</center>
